@@ -7,18 +7,21 @@ const ShoppingCartTable = () => {
       <h2>Your Order</h2>
       <table className="table">
         <thead>
-          <th>#</th>
-          <th>Item</th>
-          <th>Count</th>
-          <th>Price</th>
-          <th>Action</th>
+          <tr>
+            <th>#</th>
+            <th>Item</th>
+            <th>Count</th>
+            <th>Price</th>
+            <th>Action</th>
+          </tr>
         </thead>
         <tbody>
-          <tr>1</tr>
-          <tr>Size Reliability Engineering </tr>
-          <tr>2</tr>
-          <tr>$4</tr>
-          <tr>Action</tr>
+          <tr>
+            <td>1</td>
+            <td>Size Reliability Engineering</td>
+            <td>2</td>
+            <td>$4</td>
+          </tr>
         </tbody>
       </table>
       <div className="total">Total: $210</div>

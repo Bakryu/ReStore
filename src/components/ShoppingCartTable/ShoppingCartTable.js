@@ -1,7 +1,7 @@
 import React from "react";
 import "./shoppingCartTable.css";
 
-const ShoppingCartTable = () => {
+const ShoppingCartTable = ({items,total,g}) => {
   return (
     <div className="shopping-cart-table">
       <h2>Your Order</h2>

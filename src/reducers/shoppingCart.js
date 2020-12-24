@@ -21,11 +21,18 @@ const updateCartItem = (book, item = {}, quantity) => {
   };
 };
 
+const updateOrderTotal = (cartItems) => {
+  const orderTotal=cartItems.reduce((sum, { total }) => sum + total);
+};
+
 const updateOrder = (state, bookId, quantity) => {
   const {
     bookList: { books },
     shoppingCart: { cartItems },
   } = state;
+  console.log(books);
+  console.log(cartItems);
+
   const book = books.find(({ id }) => id === bookId);
   const itemIndex = cartItems.findIndex(({ id }) => id === bookId);
   const item = cartItems[itemIndex];
